@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { OnInit } from '@angular/core';
+import { initFlowbite } from 'flowbite';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +8,13 @@ import { Component } from '@angular/core';
   standalone: false,
   styleUrl: './app.component.scss'
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'bscv';
+
+  ngOnInit(): void {
+
+  }
+  ngAfterViewInit(): void {
+    initFlowbite();
+  }
 }

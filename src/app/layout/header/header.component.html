@@ -1,0 +1,71 @@
+<nav class="bg-gray-900 border-gray-200">
+  <div class="flex flex-wrap items-center justify-between w-full px-3 py-4 mx-auto xl:px-16">
+    <a routerLink="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <img src="{{ logoImg }}" class="h-8" alt="Flowbite Logo" />
+    </a>
+    <div class="flex items-center space-x-1 xl:order-2 xl:space-x-2 rtl:space-x-reverse">
+      <a routerLink="/sign-in"
+        class="text-white hover:bg-purple-500 focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-4 py-2 md:px-5 md:py-2.5 focus:outline-none border-purple-500 border-2 hidden xl:block">Sign
+        in</a>
+      <a routerLink="/sign-up"
+        class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-full text-sm px-4 py-2 md:px-5 md:py-2.5 focus:outline-none hidden xl:block">Sign
+        up</a>
+      <button data-collapse-toggle="mega-menu" type="button"
+        class="inline-flex items-center justify-center w-10 h-10 p-2 text-sm text-gray-500 rounded-lg xl:hidden focus:outline-none"
+        aria-controls="mega-menu" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15" />
+        </svg>
+      </button>
+    </div>
+    <div id="mega-menu" class="items-center justify-between hidden w-full xl:flex xl:w-auto xl:order-1">
+      <ul class="flex flex-col mt-4 font-medium xl:flex-row xl:mt-0 xl:space-x-8 rtl:space-x-reverse">
+        <li>
+          <a href="#" routerLinkActive="text-purple-600"
+            class="block px-3 py-2 text-white xl:hover:bg-transparent xl:border-0 xl:hover:text-purple-600 xl:p-0"
+            aria-current="page">Home</a>
+        </li>
+        <li>
+          <a href="#" routerLinkActive="text-purple-600"
+            class="block px-3 py-2 text-white xl:hover:bg-transparent xl:border-0 xl:hover:text-purple-600 xl:p-0">Plans</a>
+        </li>
+        <li>
+          <a href="#" routerLinkActive="text-purple-600"
+            class="block px-3 py-2 text-white xl:hover:bg-transparent xl:border-0 xl:hover:text-purple-600 xl:p-0">Affiliates</a>
+        </li>
+        <li>
+          <a href="#" routerLinkActive="text-purple-600"
+            class="block px-3 py-2 text-white xl:hover:bg-transparent xl:border-0 xl:hover:text-purple-600 xl:p-0">About</a>
+        </li>
+        <li>
+          <a href="#" routerLinkActive="text-purple-600"
+            class="block px-3 py-2 text-white xl:hover:bg-transparent xl:border-0 xl:hover:text-purple-600 xl:p-0">Blogs</a>
+        </li>
+        <li>
+          <a href="#" routerLinkActive="text-purple-600"
+            class="block px-3 py-2 text-white xl:hover:bg-transparent xl:border-0 xl:hover:text-purple-600 xl:p-0">FAQ</a>
+        </li>
+        <li>
+          <a href="#" routerLinkActive="text-purple-600"
+            class="block px-3 py-2 text-white xl:hover:bg-transparent xl:border-0 xl:hover:text-purple-600 xl:p-0">App</a>
+        </li>
+        <li>
+          <a href="#" routerLinkActive="text-purple-600"
+            class="block px-3 py-2 text-white xl:hover:bg-transparent xl:border-0 xl:hover:text-purple-600 xl:p-0">Contact</a>
+        </li>
+      </ul>
+
+      <div
+        class="flex flex-col items-center gap-3 space-x-1 sm:flex-row xl:order-2 xl:space-x-2 rtl:space-x-reverse xl:hidden">
+        <a routerLink="/sign-in"
+          class="text-white hover:bg-purple-500 focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-4 py-2 md:px-5 md:py-2.5 focus:outline-none border-purple-500 border-2 w-full text-center">Sign
+          in</a>
+        <a routerLink="/sign-up"
+          class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-full text-sm px-4 py-2 md:px-5 md:py-2.5 focus:outline-none w-full text-center">Sign
+          up</a>
+      </div>
+    </div>
+  </div>
+</nav>
