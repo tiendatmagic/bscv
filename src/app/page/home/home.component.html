@@ -18,7 +18,7 @@
         <div class="mt-6">
           <div class="flex items-center gap-3 space-x-1 xl:order-2 xl:space-x-2 rtl:space-x-reverse">
             <a routerLink="/sign-up"
-              class="text-white bg-violet-700 hover:bg-violet-800 focus:ring-4 focus:ring-violet-300 font-medium rounded-full text-sm px-4 py-2 md:px-5 md:py-2.5 focus:outline-none text-center">Sign
+              class="text-white bg-violet-700 hover:bg-violet-800 font-medium rounded-full text-sm px-4 py-2 md:px-5 md:py-2.5 focus:outline-none text-center">Sign
               up</a>
             <a routerLink="/sign-in"
               class="text-white hover:bg-violet-500 focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-4 py-2 md:px-5 md:py-2.5 focus:outline-none border-violet-500 border-2 text-center">
@@ -38,7 +38,7 @@
 
 <section>
   <div class="grid grid-cols-1 py-20 text-center">
-    <span class="mb-2 tracking-wider text-violet-700"> OUR FEATURES </span>
+    <span class="mb-2 tracking-wider uppercase text-violet-700"> OUR FEATURES </span>
     <h3 class="md:text-[30px] text-[26px] font-semibold mb-3">
       Why Choose BsvCloud?
     </h3>
@@ -182,4 +182,578 @@
   </div>
 </section>
 
-<section class="py-[1000px]">lorem</section>
+<section>
+  <div class="grid grid-cols-1 py-20 text-center">
+    <span class="mb-2 tracking-wider uppercase text-violet-700"> OUR PLANS </span>
+    <h3 class="md:text-[30px] text-[26px] font-semibold mb-3">
+      Choose your Plan
+    </h3>
+
+    <div class="px-3 mx-auto xl:px-20 max-w-7xl">
+      <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-10 gap-[30px]">
+        <div *ngFor="let index of numbersArray">
+          <div class="card card-full card-s3">
+            <div
+              class="relative p-2 transition-all duration-500 border border-gray-800 rounded-lg shadow-md plan-card group bg-slate-900 hover:shadow-md hover:shadow-gray-700 h-fit">
+              <div
+                class="absolute inset-0 bg-gradient-to-r from-red-600 to-violet-600 rounded-lg -mt-1 group-hover:-mt-2 -ms-1 group-hover:-ms-2 h-[98%] w-[98%] -z-10 transition-all duration-500">
+              </div>
+
+              <div class="relative overflow-hidden">
+                <div class="relative overflow-hidden rounded-lg">
+                  <img
+                    src="https://mix-0.s3.amazonaws.com/user/52008/809e154af16b4d62ac4b96b9e9f9c438.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20250315T000003Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=604800&amp;X-Amz-Credential=AKIAQ3EGUYFTCAQCF4VM%2F20250315%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=984aa1eb566e48d2d02b1f818e2343f8bdc04859adcf8fd816d14e84fc1aabf0"
+                    class="transition-all duration-500 rounded-lg shadow-md shadow-gray-700 group-hover:scale-110"
+                    alt="">
+                </div>
+                <div
+                  class="absolute mx-auto text-center transition-all duration-500 -bottom-20 group-hover:bottom-1/2 group-hover:translate-y-1/2 start-0 end-0">
+                  <a aria-current="page" href="/"
+                    class="text-white bg-violet-700 hover:bg-violet-800 font-medium rounded-full text-sm px-4 py-2 md:px-5 md:py-2.5 focus:outline-none text-center">
+                    Invest Now </a>
+                </div>
+              </div>
+              <div class="mt-3">
+                <div class="my-3">
+                  <div class="font-semibold hover:text-sky-300">Novice Mining Experience Plan</div>
+                </div>
+                <div class="flex justify-between p-2 rounded-lg shadow bg-slate-800 shadow-gray-700">
+                  <div>
+                    <span class="text-[16px] font-medium block">Price</span>
+                    <span class="text-[18px] font-semibold block"> $ 200</span>
+                  </div>
+                  <div>
+                    <span class="text-[16px] font-medium block">Plan Term</span>
+                    <span class="text-[18px] font-semibold block"><i class="mdi mdi-timer"></i> 1
+                      Day</span>
+                  </div>
+                </div>
+                <div class="flex justify-between p-2 mt-1 rounded-lg shadow bg-slate-800 shadow-gray-700">
+                  <div>
+                    <span class="text-[16px] font-medium block">Daily Rewards</span>
+                    <span class="text-[18px] font-semibold block text-left">$ 4.00</span>
+                  </div>
+                  <div><span class="text-[16px] font-medium block">Capital Back</span><span
+                      class="text-[18px] font-semibold block text-center">
+                      Yes</span></div>
+                </div>
+                <div class="flex justify-between p-2 mt-1 rounded-lg shadow bg-slate-800 shadow-gray-700">
+                  <div><span class="text-[16px] font-medium block text-right">1 Day Fixed
+                      Rewards</span><span class="text-[18px] font-semibold block text-left">$ 200 + $ 4.00</span></div>
+                </div>
+              </div>
+              <a aria-current="page" href="/"
+                class="text-white bg-violet-700 hover:bg-violet-800 font-medium rounded-full text-sm px-4 py-2 md:px-5 md:py-2.5 focus:outline-none text-center w-full block mt-5">
+                Invest
+                Now
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mx-auto mt-10 text-center">
+      <a aria-current="page" href="/"
+        class="text-white bg-violet-700 hover:bg-violet-800 font-medium rounded-full text-sm px-4 py-2 md:px-5 md:py-2.5 focus:outline-none text-center mx-auto">
+        View All
+      </a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="px-3 mx-auto xl:px-20 max-w-7xl">
+    <div class="grid grid-cols-1 gap-5 md:grid-cols-2 xl:gap-10">
+      <div class="">
+        <img class="about-img" src="https://bsvcloud.com/img/about-1.5ec298e9.jpg" alt="">
+      </div>
+      <div class="about-style">
+        <div class="text-left"><span class="mb-2 tracking-wider uppercase text-violet-700">ABOUT US</span>
+          <h3 class="mt-3 md:text-[30px] text-[26px] font-semibold mb-3"> About BsvCloud </h3>
+          <p> Established in 2017, BsvCloud has been a pioneer in cryptocurrency cloud mining,
+            dedicated to making mining simple, accessible, and hassle-free for everyone. </p>
+          <p class="mt-2"> We have developed a state-of-the-art cloud computing platform, integrating
+            advanced technologies to serve users worldwide. At BsvCloud, you can mine leading cryptocurrencies like
+            Bitcoin without the need for your own hardware or technical know-how. </p>
+          <p class="mt-2"> Our equipment, hosted in top-tier data centers, is managed by a team of
+            seasoned professionals who ensure optimal performance, security, and 24/7 reliability. </p>
+          <p class="mt-2"> By leveraging high-efficiency hardware and innovative deployment strategies,
+            we maximize mining output while offering affordable and flexible plans to suit all levels of investment.
+          </p>
+          <p class="mt-2"> With BsvCloud, anyone, anywhere can seamlessly participate in cryptocurrency
+            mining and unlock their earning potential from the comfort of home. </p>
+
+          <div class="mt-5">
+            <a aria-current="page" href="/"
+              class="text-white bg-violet-700 hover:bg-violet-800 font-medium rounded-full text-sm px-4 py-2 md:px-5 md:py-2.5 focus:outline-none text-center mx-auto">
+              Join Now
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="px-3 mx-auto xl:px-20 max-w-7xl">
+    <div class="grid grid-cols-1 py-20 text-center">
+      <span class="mb-2 tracking-wider uppercase text-violet-700"> WHY CHOSE US
+      </span>
+      <h3 class="md:text-[30px] text-[26px] font-semibold mb-3">
+        Reasons to choose our platform
+      </h3>
+    </div>
+
+    <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-10 gap-[30px]">
+      <div
+        class="relative p-6 mt-10 text-center transition-all duration-500 shadow choose-card group rounded-xl bg-violet-600 shadow-gray-800 hover:shadow-md hover:shadow-gray-800">
+        <div class="relative -mt-16">
+          <div
+            class="flex items-center justify-center p-3 mx-auto rounded-full shadow-md icon bg-slate-900 size-20 shadow-gray-800 our-feature-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="35px" height="35px"
+              class="text-white fill-white">
+              <path
+                d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z" />
+            </svg>
+          </div>
+          <p class="mt-3 text-white"> Advanced Technology and Facilities: BsvCloud has a world-class
+            cloud computing platform and the most advanced equipment deployment technology to ensure mining efficiency
+            and
+            stability. Our data centers and partner computing centers are equipped with the best quality equipment to
+            provide you with stable and efficient mining services. </p>
+        </div>
+      </div>
+      <div
+        class="relative p-6 mt-10 text-center transition-all duration-500 shadow choose-card group rounded-xl bg-violet-600 shadow-gray-800 hover:shadow-md hover:shadow-gray-800">
+        <div class="relative -mt-16">
+          <div
+            class="flex items-center justify-center p-3 mx-auto rounded-full shadow-md icon bg-slate-900 size-20 shadow-gray-800 our-feature-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="35px" height="35px"
+              class="text-white fill-white">
+              <path
+                d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z" />
+            </svg>
+          </div>
+          <p class="mt-3 text-white"> Comprehensive technical support: Our team of experts provides
+            comprehensive technical support and equipment maintenance services to ensure your mining operations are safe
+            and reliable. Whether you are technically experienced or not, we are committed to providing you with quality
+            customer support so that you can mine with confidence. </p>
+        </div>
+      </div>
+      <div
+        class="relative p-6 mt-10 text-center transition-all duration-500 shadow choose-card group rounded-xl bg-violet-600 shadow-gray-800 hover:shadow-md hover:shadow-gray-800">
+        <div class="relative -mt-16">
+          <div
+            class="flex items-center justify-center p-3 mx-auto rounded-full shadow-md icon bg-slate-900 size-20 shadow-gray-800 our-feature-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="35px" height="35px"
+              class="text-white fill-white">
+              <path
+                d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z" />
+            </svg>
+          </div>
+          <p class="mt-3 text-white"> Competitive pricing and transparent fee structure: BsvCloud's
+            cloud mining plans are competitively priced and have a transparent fee structure with no hidden fees. We are
+            committed to providing users with the most cost-effective cloud mining solutions, allowing you to get the
+            most
+            mining benefits in the market. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="px-3 mx-auto xl:px-20 max-w-7xl">
+    <div class="grid grid-cols-1 gap-3 mt-16 md:grid-cols-2 xl:gap-10">
+
+      <div class="text-left">
+        <div class="text-left"><span class="mb-2 tracking-wider uppercase text-violet-700">Affiliate Program</span>
+          <h3 class="mt-3 md:text-[30px] text-[26px] font-semibold mb-3 leading-10">Our affiliate program offers a
+            variety of benefits. </h3>
+          <ul class="affiliate-list">
+            <li class="flex gap-3 mb-3">
+              <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-check text-violet-700" data-v-1badc801="">
+                  <polyline points="20 6 9 17 4 12" data-v-1badc801=""></polyline>
+                </svg></div>
+              <p> You can become an affiliate and take advantage of our program even without making a
+                deposit. </p>
+            </li>
+            <li class="flex gap-3 mb-3">
+              <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-check text-violet-700" data-v-1badc801="">
+                  <polyline points="20 6 9 17 4 12" data-v-1badc801=""></polyline>
+                </svg></div>
+              <p> If a user you referred makes an investment, you will receive 3% of their first deposit amount as a
+                bonus.
+              </p>
+            </li>
+            <li class="flex gap-3 mb-3">
+              <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-check text-violet-700" data-v-1badc801="">
+                  <polyline points="20 6 9 17 4 12" data-v-1badc801=""></polyline>
+                </svg></div>
+              <p> We provide instant payouts of affiliate rewards in cryptocurrency, which are credited to your
+                account balance.
+              </p>
+            </li>
+            <li class="flex gap-3 mb-3">
+              <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-check text-violet-700" data-v-1badc801="">
+                  <polyline points="20 6 9 17 4 12" data-v-1badc801=""></polyline>
+                </svg></div>
+              <p>There are no limits to the number of affiliates you can bring in, so your earning potential is
+                boundless.
+              </p>
+            </li>
+          </ul>
+
+          <div class="mt-7">
+            <a href="/affiliates"
+              class="text-white bg-violet-700 hover:bg-violet-800 font-medium rounded-full text-sm px-4 py-2 md:px-5 md:py-2.5 focus:outline-none text-center mx-auto">Know
+              More
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="overflow-hidden rounded-lg about-style">
+        <img class="about-img" src="https://bsvcloud.com/img/refer.e3909688.jpg" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container mt-16 md:mt-24">
+    <div class="grid grid-cols-1 gap-10 md:grid-cols-3">
+      <div class="">
+        <div class="grid grid-cols-1 text-left">
+          <h3 class="mb-4 text-2xl font-semibold leading-snug md:text-3xl md:leading-snug">Frequently Asked Questions
+          </h3>
+          <p class="max-w-xl mx-auto text-slate-400">We answer some of your Frequently Asked Questions regarding our
+            platform. If you have a query that is not answered here, Please feel free to contact us.</p>
+          <div class="mt-6"><a href="mailto:info@bsvcloud.com"
+              class="text-white bg-violet-700 hover:bg-violet-800 font-medium rounded-full text-sm px-4 py-2 md:px-5 md:py-2.5 focus:outline-none text-center mx-auto">
+              Contact us</a></div>
+        </div>
+      </div>
+      <div class="col-span-2">
+        <div class="grid grid-cols-1 text-left"><span class="mb-2 tracking-wider uppercase text-violet-700">YOU HAVE
+            QUESTIONS</span>
+          <h3 class="mb-4 text-2xl font-semibold leading-snug md:text-3xl md:leading-snug">Q&amp;A</h3>
+        </div>
+        <div class="w-full">
+          <div id="accordion-collapseone" data-accordion="collapse">
+            <div class="relative mt-4 overflow-hidden rounded-md shadow shadow-gray-800 first:mt-4">
+              <h2 class="text-base font-semibold" id="accordion-collapse-heading-1"><button type="button"
+                  class="flex items-center justify-between w-full p-5 font-semibold text-start"
+                  data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
+                  aria-controls="accordion-collapse-body-1"><span>What is
+                    BsvCloud?</span><svg class="size-4 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"></path>
+                  </svg></button></h2>
+              <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+                <div class="p-5">
+                  <p class="text-gray-400">BsvCloud is a leading cryptocurrency investment company
+                    founded in 2017 and headquartered in the UK. Our website and mobile cloud mining platform is trusted
+                    by over 500,000 users worldwide and provides the most cost efficient way to earn Bitcoin. As a
+                    regulated mining company, we share our computational resources for crypto mining without requiring
+                    users to buy expensive mining equipment or GPUs. Our process is simple and accessible to everyone,
+                    with a proven track record of delivering daily income with complete transparency. Customers trust us
+                    for our commitment to security and reliability in cryptocurrency mining.</p>
+                </div>
+              </div>
+            </div>
+            <div class="relative mt-4 overflow-hidden rounded-md shadow shadow-gray-800 first:mt-4">
+              <h2 class="text-base font-semibold" id="accordion-collapse-heading-2"
+                data-accordion-target="#accordion-collapse-body-2" aria-expanded="true"
+                aria-controls="accordion-collapse-body-2"><button type="button"
+                  class="flex items-center justify-between w-full p-5 font-semibold text-start"><span>Is BsvCloud
+                    legal?</span><svg class="size-4 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"></path>
+                  </svg></button></h2>
+              <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
+                <div class="p-5">
+                  <p class="text-gray-400">BsvCloud is a legitimate and secure cloud mining platform
+                    that lets you earn income with minimal investments. Founded on solid principles, our skilled team
+                    specializes in areas like ASIC mining and blockchain technology. We aim to provide a smooth
+                    investment experience, making crypto cloud mining accessible to everyone, regardless of expertise.
+                    We protect your data with EV SSL encryption, ensuring confidentiality and security. Our servers are
+                    secured against DDoS attacks, allowing safe access from anywhere in the world. With BsvCloud, you
+                    can trust that you are engaging in a secure and efficient crypto mining experience.</p>
+                </div>
+              </div>
+            </div>
+            <div class="relative mt-4 overflow-hidden rounded-md shadow shadow-gray-800 first:mt-4">
+              <h2 class="text-base font-semibold" id="accordion-collapse-heading-3"
+                data-accordion-target="#accordion-collapse-body-3" aria-expanded="true"
+                aria-controls="accordion-collapse-body-3"><button type="button"
+                  class="flex items-center justify-between w-full p-5 font-semibold text-start"><span>How can I earn
+                    passive income with cloud mining?</span><svg class="size-4 shrink-0" fill="currentColor"
+                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"></path>
+                  </svg></button></h2>
+              <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
+                <div class="p-5">
+                  <p class="text-gray-400">To earn passive income through cloud mining on BsvCloud,
+                    simply register and choose your mining contract. You don’t need to invest in additional equipment
+                    like crypto mining machines or possess technical skills; just rent a miner and start earning daily
+                    passive income effortlessly. Our platform offers an easy path to cryptocurrency mining, including
+                    popular options like Bitcoin, Ethereum, and Litecoin. With BsvCloud, you can take advantage of a
+                    secure and efficient way to mine cryptocurrencies and enjoy hassle-free earnings.</p>
+                </div>
+              </div>
+            </div>
+            <div class="relative mt-4 overflow-hidden rounded-md shadow shadow-gray-800 first:mt-4">
+              <h2 class="text-base font-semibold" id="accordion-collapse-heading-4"
+                data-accordion-target="#accordion-collapse-body-4" aria-expanded="true"
+                aria-controls="accordion-collapse-body-4"><button type="button"
+                  class="flex items-center justify-between w-full p-5 font-semibold text-start"><span>Is it possible to
+                    earn money without investing?</span><svg class="size-4 shrink-0" fill="currentColor"
+                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"></path>
+                  </svg></button></h2>
+              <div id="accordion-collapse-body-4" class="hidden" aria-labelledby="accordion-collapse-heading-4">
+                <div class="p-5">
+                  <p class="text-gray-400">Yes! Join our profitable affiliate program and earn up to
+                    3% commission with no upfront investment. Just refer others and let crypto cloud mining do the rest.
+                    With unlimited referrals, your earning potential is limitless. Promote our platform on social media
+                    or your website without needing cryptocurrency mining machines or coin mining equipment. Take
+                    control of your financial future with minimal risk. Join our referral program now and start earning
+                    through cloud mining, a secure way to profit!</p>
+                </div>
+              </div>
+            </div>
+            <div class="relative mt-4 overflow-hidden rounded-md shadow shadow-gray-800 first:mt-4">
+              <h2 class="text-base font-semibold" id="accordion-collapse-heading-5" id="accordion-collapse-heading-5"
+                data-accordion-target="#accordion-collapse-body-5" aria-expanded="true"
+                aria-controls="accordion-collapse-body-5"><button type="button"
+                  class="flex items-center justify-between w-full p-5 font-semibold text-start"><span>Which payment
+                    system can I use to pay?</span><svg class="size-4 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"></path>
+                  </svg></button></h2>
+              <div id="accordion-collapse-body-5" class="hidden" aria-labelledby="accordion-collapse-heading-5">
+                <div class="p-5">
+                  <p class="text-gray-400">At BsvCloud, we only accept payments in cryptocurrency.
+                    Our platform supports popular digital currencies, including BTC, LTC, ETH, DOGE, BCH, BNB, and USDT.
+                    This aligns with our vision for enhanced cloud mining solutions. We do not accept credit cards or
+                    PayPal at this time. Using cryptocurrencies ensures secure transactions with lower fees, helping to
+                    boost your mining profits. Whether you’re involved in cloud-based mining or investing in the newest
+                    crypto coins, our payment system simplifies the process, making it easy to start mining with
+                    BsvCloud.</p>
+                </div>
+              </div>
+            </div>
+            <div class="relative mt-4 overflow-hidden rounded-md shadow shadow-gray-800 first:mt-4">
+              <h2 class="text-base font-semibold" id="accordion-collapse-heading-6" id="accordion-collapse-heading-6"
+                data-accordion-target="#accordion-collapse-body-6" aria-expanded="true"
+                aria-controls="accordion-collapse-body-6"><button type="button"
+                  class="flex items-center justify-between w-full p-5 font-semibold text-start"><span>When will my daily
+                    mining profits be settled?</span><svg class="size-4 shrink-0" fill="currentColor"
+                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"></path>
+                  </svg></button></h2>
+              <div id="accordion-collapse-body-6" class="hidden" aria-labelledby="accordion-collapse-heading-6">
+                <div class="p-5">
+                  <p class="text-gray-400">Your daily mining profits from our cloud mining
+                    operations will be settled every 24 hours after you purchase your mining contract. This timely
+                    settlement ensures that you can track your mining profits efficiently and enjoy the benefits of your
+                    investment in real-time. With our reliable cryptocurrency mining platform, you can rest assured that
+                    your earnings will be processed promptly, regardless of whether you are mining Bitcoin, Ethereum, or
+                    other popular coins. Stay updated on your crypto mining earnings and take full advantage of the best
+                    crypto mining opportunities available to boost your profitability mining.</p>
+                </div>
+              </div>
+            </div>
+            <div class="relative mt-4 overflow-hidden rounded-md shadow shadow-gray-800 first:mt-4">
+              <h2 class="text-base font-semibold" id="accordion-collapse-heading-7" id="accordion-collapse-heading-7"
+                data-accordion-target="#accordion-collapse-body-7" aria-expanded="true"
+                aria-controls="accordion-collapse-body-7"><button type="button"
+                  class="flex items-center justify-between w-full p-5 font-semibold text-start"><span>What's the minimum
+                    deposit and withdrawal?</span><svg class="size-4 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"></path>
+                  </svg></button></h2>
+              <div id="accordion-collapse-body-7" class="hidden" aria-labelledby="accordion-collapse-heading-7">
+                <div class="p-5">
+                  <p class="text-gray-400">The minimum deposit and withdrawal amount is $200. This
+                    allows users to easily access our cloud mining platform and begin their cryptocurrency mining
+                    journey without a large upfront investment. Starting with this amount enables you to explore various
+                    crypto mining opportunities and earn profits from the newest crypto coins. Our simple deposit and
+                    withdrawal process ensures effective management of your mining operations with our reliable mining
+                    company.</p>
+                </div>
+              </div>
+            </div>
+            <div class="relative mt-4 overflow-hidden rounded-md shadow shadow-gray-800 first:mt-4">
+              <h2 class="text-base font-semibold" id="accordion-collapse-heading-8" id="accordion-collapse-heading-8"
+                data-accordion-target="#accordion-collapse-body-8" aria-expanded="true"
+                aria-controls="accordion-collapse-body-8"><button type="button"
+                  class="flex items-center justify-between w-full p-5 font-semibold text-start"><span>How do I withdraw
+                    my profits?</span><svg class="size-4 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"></path>
+                  </svg></button></h2>
+              <div id="accordion-collapse-body-8" class="hidden" aria-labelledby="accordion-collapse-heading-8">
+                <div class="p-5">
+                  <p class="text-gray-400">To withdraw your earnings from our cloud mining platform,
+                    simply go to the Withdraw section in your Dashboard. Enter your crypto wallet address and the amount
+                    you want to withdraw. Ensure it does not exceed your balance, with a minimum withdrawal of $200.
+                    Your request will be processed within 30 minutes, and funds will be sent to the provided wallet
+                    address. Verify your wallet address is valid; otherwise, the withdrawal will be blocked. This simple
+                    process allows you to manage your mining profits and securely access funds from your crypto mining
+                    operations.</p>
+                </div>
+              </div>
+            </div>
+            <div class="relative mt-4 overflow-hidden rounded-md shadow shadow-gray-800 first:mt-4">
+              <h2 class="text-base font-semibold" id="accordion-collapse-heading-9" id="accordion-collapse-heading-9"
+                data-accordion-target="#accordion-collapse-body-9" aria-expanded="true"
+                aria-controls="accordion-collapse-body-9"><button type="button"
+                  class="flex items-center justify-between w-full p-5 font-semibold text-start"><span>What is the
+                    withdrawal fee?</span><svg class="size-4 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"></path>
+                  </svg></button></h2>
+              <div id="accordion-collapse-body-9" class="hidden" aria-labelledby="accordion-collapse-heading-9">
+                <div class="p-5">
+                  <p class="text-gray-400">You can enjoy our cloud mining services without any
+                    maintenance or deposit fees. However, please be aware of transaction fees associated with
+                    withdrawals, which vary based on the specific blockchain used for processing. The minimum withdrawal
+                    amount is $200. With our clear fee structure, you can manage your earnings confidently while
+                    optimizing your crypto mining profits from popular cryptocurrencies.</p>
+                </div>
+              </div>
+            </div>
+            <div class="relative mt-4 overflow-hidden rounded-md shadow shadow-gray-800 first:mt-4">
+              <h2 class="text-base font-semibold" id="accordion-collapse-heading-10" id="accordion-collapse-heading-10"
+                data-accordion-target="#accordion-collapse-body-10" aria-expanded="true"
+                aria-controls="accordion-collapse-body-10"><button type="button"
+                  class="flex items-center justify-between w-full p-5 font-semibold text-start"><span>Can I download the
+                    APP?</span><svg class="size-4 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"></path>
+                  </svg></button></h2>
+              <div id="accordion-collapse-body-10" class="hidden" aria-labelledby="accordion-collapse-heading-10">
+                <div class="p-5">
+                  <p class="text-gray-400">Yes! You can easily download our app by clicking the
+                    [APP] link in the navigation bar at the top of our homepage. This app allows you to access our cloud
+                    mining platform conveniently from your mobile device, enabling you to manage your crypto mining
+                    activities on the go. Enjoy features that enhance your cryptocurrency mining experience right from
+                    your smartphone!</p>
+                </div>
+              </div>
+            </div>
+            <div class="relative mt-4 overflow-hidden rounded-md shadow shadow-gray-800 first:mt-4">
+              <h2 class="text-base font-semibold" id="accordion-collapse-heading-11" id="accordion-collapse-heading-11"
+                data-accordion-target="#accordion-collapse-body-11" aria-expanded="true"
+                aria-controls="accordion-collapse-body-11"><button type="button"
+                  class="flex items-center justify-between w-full p-5 font-semibold text-start"><span>How can I contact
+                    BsvCloud's customer support for additional queries?</span><svg class="size-4 shrink-0"
+                    fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"></path>
+                  </svg></button></h2>
+              <div id="accordion-collapse-body-11" class="hidden" aria-labelledby="accordion-collapse-heading-11">
+                <div class="p-5">
+                  <p class="text-gray-400">You can easily reach BsvCloud's customer support through
+                    our 24/7 chat feature available on our website. A chat window will pop up in the bottom right corner
+                    of your screen, providing instant access to assistance. If you prefer written communication, you can
+                    email us at infobsvcloud.com for any questions about our cloud mining services, crypto mining, or
+                    profitability mining. Our team is dedicated to offering reliable support and ensuring your
+                    experience with our crypto cloud mining platform is seamless!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="px-3 py-10 mx-auto xl:px-20 max-w-7xl">
+    <div class="grid grid-cols-1 py-10 text-center">
+      <span class="mb-2 tracking-wider uppercase text-violet-700"> TESTIMONIALS
+      </span>
+      <h3 class="md:text-[30px] text-[26px] font-semibold mb-3">
+        What our respectable clients says
+      </h3>
+    </div>
+
+    <div class="grid grid-cols-1 gap-10 md:grid-cols-3">
+      <div class="px-3 py-10 text-white bg-[#060d1e] rounded-xl">
+        <div class="mb-4">
+          <p>Solid Investment Platform</p>
+          <p> I’ve been here for months, and Bsvcloud consistently delivers solid profits without any issues. </p>
+        </div>
+        <div class="flex items-center gap-2">
+          <div class="w-12 h-12 overflow-hidden rounded-full">
+            <img src="https://picsum.photos/300/300?random=1" alt="" class="w-full">
+          </div>
+          <div>Amelia Childe </div>
+        </div>
+      </div>
+      <div class="px-3 py-10 text-white bg-[#060d1e] rounded-xl">
+        <div class="mb-4">
+          <p>Solid Investment Platform</p>
+          <p> I’ve been here for months, and Bsvcloud consistently delivers solid profits without any issues. </p>
+        </div>
+        <div class="flex items-center gap-2">
+          <div class="w-12 h-12 overflow-hidden rounded-full">
+            <img src="https://picsum.photos/300/300?random=2" alt="" class="w-full">
+          </div>
+          <div>Charles Gallup
+          </div>
+        </div>
+      </div>
+      <div class="px-3 py-10 text-white bg-[#060d1e] rounded-xl">
+        <div class="mb-4">
+          <p>Solid Investment Platform</p>
+          <p> I’ve been here for months, and Bsvcloud consistently delivers solid profits without any issues. </p>
+        </div>
+        <div class="flex items-center gap-2">
+          <div class="w-12 h-12 overflow-hidden rounded-full">
+            <img src="https://picsum.photos/300/300?random=3" alt="" class="w-full">
+          </div>
+          <div>Ford Child
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>

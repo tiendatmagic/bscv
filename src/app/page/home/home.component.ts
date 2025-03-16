@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
-
+  numbersArray: number[] = Array.from({ length: 12 }).map(
+    (_, index) => index + 1
+  );
 }
