@@ -42,7 +42,7 @@ export class SignInComponent {
         this.router.navigate(['/home']);
         this.auth.getToken = res.access_token;
         this.auth.isLogin = true;
-        localStorage.setItem('profile', JSON.stringify(res['infomation']));
+        localStorage.setItem('profile', JSON.stringify(res['information']));
         this.loginForm.enable();
       },
 
