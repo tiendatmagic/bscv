@@ -4,8 +4,8 @@
 
 export const environment = {
   isMobileApp: false,
-  production: true,
-  apiUrl: 'http://bscvv.ddns.net/',
+  production: false,
+  apiUrl: 'https://bscvv.ddns.net/',
   apiUrlLocal: 'http://localhost:8000/',
   pusherKey: 'f237e063b074fb0efba8',
   pusherCluster: 'ap1'
