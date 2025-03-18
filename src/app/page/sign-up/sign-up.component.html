@@ -3,7 +3,7 @@
     <div class="max-w-[500px] w-full m-auto p-6 bg-[#00081b] shadow-md shadow-gray-800 rounded-md">
       <a routerLink="/"><img src="/assets/images/logo.png" class="block mx-auto h-7" alt="" /></a>
       <h5 class="my-6 text-xl font-semibold">Sign Up</h5>
-      <form class="text-start" (submit)="onRegister()">
+      <form class="text-start" [formGroup]="registerForm" (ngSubmit)="onRegister()">
         <div class="grid grid-cols-1">
           <div class="mb-4">
             <label class="font-semibold" for="LoginEmail">Email Address:</label><input id="LoginEmail" type="email"
@@ -27,9 +27,9 @@
               class="form-checkbox-label text-slate-400" for="AcceptT&amp;C">I Accept <a href="javascript:void(0)"
                 class="text-violet-600">Terms And Condition</a></label></div>
           <div class="mb-4">
-            <input type="button"
+            <button type="submit"
               class="text-white bg-violet-700 hover:bg-violet-800 font-medium rounded-full text-sm px-4 py-2 md:px-5 md:py-2.5 focus:outline-none w-full text-center cursor-pointer"
-              value="Sign up" (click)="onRegister()" />
+              (click)="onRegister()">Sign up</button>
           </div>
           <div class="text-center"><span class="text-slate-400 me-2">Already have an account ? </span><a
               routerLink="/sign-in" class="font-bold text-white">Sign in</a></div>
