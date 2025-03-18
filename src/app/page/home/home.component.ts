@@ -13,10 +13,10 @@ export class HomeComponent {
   );
   chooseTransaction: number = 0;
 
-  ngOnInit(): void {
-    initFlowbite();
-  }
   ngAfterViewInit(): void {
-    initFlowbite();
+    setTimeout(() => {
+      initFlowbite();
+    }, 0);
   }
+
 }

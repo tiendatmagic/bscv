@@ -1,0 +1,23 @@
+<div class="flex gap-3 md:gap-5">
+  <div class="w-1/5">
+    <ul>
+      <li>
+        <a class="p-3 text-white hover:bg-[#1e293b] rounded-lg block cursor-pointer"
+          (click)="chooseMenu(0)">Dashboard</a>
+      </li>
+      <li>
+        <a class="p-3 text-white hover:bg-[#1e293b] rounded-lg block cursor-pointer" (click)="chooseMenu(1)">Deposit</a>
+      </li>
+    </ul>
+  </div>
+  <div class="w-4/5">
+    <ng-container *ngIf="selectMenu ==0">
+      <p>Dashboard</p>
+      <p>Xin chào {{info.name}}</p>
+    </ng-container>
+
+    <ng-container *ngIf="selectMenu ==1">
+      <p>Deposit</p>
+    </ng-container>
+  </div>
+</div>

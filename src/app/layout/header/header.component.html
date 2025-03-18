@@ -4,15 +4,28 @@
       <img src="{{ logoImg }}" class="h-8" alt="Flowbite Logo" />
     </a>
     <div class="flex items-center space-x-1 xl:order-2 xl:space-x-2 rtl:space-x-reverse">
-      <a routerLink="/sign-in"
-        class="text-white hover:bg-violet-500 font-medium rounded-full text-sm px-4 py-2 md:px-5 md:py-2.5 focus:outline-none border-violet-500 border-2 hidden xl:block">Sign
-        in</a>
-      <a routerLink="/sign-up"
-        class="text-white bg-violet-700 hover:bg-violet-800  font-medium rounded-full text-sm px-4 py-2 md:px-5 md:py-2.5 focus:outline-none hidden xl:block">Sign
-        up</a>
-      <button data-collapse-toggle="mega-menu" type="button"
+      <ng-container *ngIf="!isLogin">
+        <a routerLink="/sign-in"
+          class="text-white hover:bg-violet-500 font-medium rounded-full text-sm px-4 py-2 md:px-5 md:py-2.5 focus:outline-none border-violet-500 border-2 hidden xl:block">Sign
+          in</a>
+        <a routerLink="/sign-up"
+          class="text-white bg-violet-700 hover:bg-violet-800  font-medium rounded-full text-sm px-4 py-2 md:px-5 md:py-2.5 focus:outline-none hidden xl:block">Sign
+          up</a>
+      </ng-container>
+      <ng-container *ngIf="isLogin">
+        <div class="relative flex items-center">
+          <button routerLink="/dashboard"
+            class="w-10 h-10 text-white rounded-full btn-icon bg-violet-600 hover:bg-violet-700 border-violet-600 hover:border-violet-700"
+            type="button"><img src="/assets/images/profile.jpg" class="w-full h-full rounded-full" alt="">
+          </button>
+        </div>
+        <a class="text-white bg-violet-700 hover:bg-violet-800  font-medium rounded-full text-sm px-4 py-2 md:px-5 md:py-2.5 focus:outline-none hidden xl:block cursor-pointer"
+          (click)="onLogout()">Sign
+          out</a>
+      </ng-container>
+      <button type="button"
         class="inline-flex items-center justify-center w-10 h-10 p-2 text-sm text-gray-500 rounded-lg xl:hidden focus:outline-none"
-        aria-controls="mega-menu" aria-expanded="false">
+        aria-expanded="false" (click)="isShowMenu = !isShowMenu">
         <span class="sr-only">Open main menu</span>
         <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -20,7 +33,8 @@
         </svg>
       </button>
     </div>
-    <div id="mega-menu" class="items-center justify-between hidden w-full xl:flex xl:w-auto xl:order-1">
+    <div id="mega-menu" class="items-center justify-between w-full xl:flex xl:w-auto xl:order-1"
+      [ngClass]="isShowMenu ? 'block' : 'hidden'">
       <ul class="flex flex-col mt-4 font-medium xl:flex-row xl:mt-0 xl:space-x-8 rtl:space-x-reverse">
         <li>
           <a href="#" routerLinkActive="text-violet-600"
@@ -59,12 +73,21 @@
 
       <div
         class="flex flex-col items-center gap-3 space-x-1 md:flex-row xl:order-2 xl:space-x-2 rtl:space-x-reverse xl:hidden">
-        <a routerLink="/sign-in"
-          class="text-white hover:bg-violet-500 font-medium rounded-full text-sm px-4 py-2 md:px-5 md:py-2.5 focus:outline-none border-violet-500 border-2 w-full text-center">Sign
-          in</a>
-        <a routerLink="/sign-up"
-          class="text-white bg-violet-700 hover:bg-violet-800  font-medium rounded-full text-sm px-4 py-2 md:px-5 md:py-2.5 focus:outline-none w-full text-center">Sign
-          up</a>
+        <ng-container *ngIf="!isLogin">
+          <a routerLink="/sign-in"
+            class="text-white hover:bg-violet-500 font-medium rounded-full text-sm px-4 py-2 md:px-5 md:py-2.5 focus:outline-none border-violet-500 border-2 w-full text-center"
+            (click)="isShowMenu = false">Sign
+            in</a>
+          <a routerLink="/sign-up"
+            class="text-white bg-violet-700 hover:bg-violet-800  font-medium rounded-full text-sm px-4 py-2 md:px-5 md:py-2.5 focus:outline-none w-full text-center"
+            (click)="isShowMenu = false">Sign
+            up</a>
+        </ng-container>
+        <ng-container *ngIf="isLogin">
+          <a class="text-white bg-violet-700 hover:bg-violet-800  font-medium rounded-full text-sm px-4 py-2 md:px-5 md:py-2.5 focus:outline-none w-full text-center"
+            (click)="onLogout()">Sign
+            out</a>
+        </ng-container>
       </div>
     </div>
   </div>

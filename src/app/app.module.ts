@@ -9,6 +9,11 @@ import { FooterComponent } from './layout/footer/footer.component';
 import { HomeComponent } from './page/home/home.component';
 import { SignUpComponent } from './page/sign-up/sign-up.component';
 import { SignInComponent } from './page/sign-in/sign-in.component';
+import { ReactiveFormsModule, FormsModule, Validators } from '@angular/forms';
+import { HttpInterceptorService } from './services/http-logger.service';
+import { HTTP_INTERCEPTORS, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
+import { DatePipe } from '@angular/common';
+import { DashboardComponent } from './page/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -18,13 +23,22 @@ import { SignInComponent } from './page/sign-in/sign-in.component';
     FooterComponent,
     HomeComponent,
     SignUpComponent,
-    SignInComponent
+    SignInComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [{
+    provide: HTTP_INTERCEPTORS,
+    useClass: HttpInterceptorService,
+    multi: true
+  },
+    DatePipe,
+  provideHttpClient(withInterceptorsFromDi())],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
