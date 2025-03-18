@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { initFlowbite } from 'flowbite';
 
 @Component({
   selector: 'app-home',
@@ -10,4 +11,12 @@ export class HomeComponent {
   numbersArray: number[] = Array.from({ length: 12 }).map(
     (_, index) => index + 1
   );
+  chooseTransaction: number = 0;
+
+  ngOnInit(): void {
+    initFlowbite();
+  }
+  ngAfterViewInit(): void {
+    initFlowbite();
+  }
 }

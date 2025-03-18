@@ -12,7 +12,7 @@ export class AppComponent implements OnInit {
   title = 'bscv';
 
   ngOnInit(): void {
-
+    initFlowbite();
   }
   ngAfterViewInit(): void {
     initFlowbite();
