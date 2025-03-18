@@ -3,7 +3,7 @@
     <div class="max-w-[500px] w-full m-auto p-6 bg-[#00081b] shadow-md shadow-gray-800 rounded-md">
       <a routerLink="/"><img src="/assets/images/logo.png" class="block mx-auto h-7" alt="" /></a>
       <h5 class="my-6 text-xl font-semibold">Sign In</h5>
-      <form class="text-start" [formGroup]="loginForm" (submit)="onLogin()">
+      <form class="text-start" [formGroup]="loginForm" (ngSubmit)="onLogin()">
         <div class="grid grid-cols-1">
           <div class="mb-4">
             <label class="font-semibold" for="LoginEmail">Email Address:</label>
@@ -23,9 +23,10 @@
             </p>
           </div>
           <div class="mb-4">
-            <input type="button"
+            <button type="submit"
               class="text-white bg-violet-700 hover:bg-violet-800 font-medium rounded-full text-sm px-4 py-2 md:px-5 md:py-2.5 focus:outline-none w-full text-center cursor-pointer"
-              value="Sign in" (click)="onLogin()" />
+              (click)="onLogin()">Sign in</button>
+
           </div>
           <div class="text-center">
             <span class="text-slate-400 me-2">Don't have an account ?</span><a routerLink="/sign-up"

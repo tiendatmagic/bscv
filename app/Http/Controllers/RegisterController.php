@@ -43,7 +43,7 @@ class RegisterController extends BaseController
             'access_token' => $token,
             'refresh_token' => $newRefreshToken,
             'token_type' => 'bearer',
-            'expires_in' => auth('api')->factory()->getTTL() * 1,
+            'expires_in' => auth('api')->factory()->getTTL() * 60,
             'infomation' =>  response()->json(auth('api')->user())->getData()
         ]);
     }
