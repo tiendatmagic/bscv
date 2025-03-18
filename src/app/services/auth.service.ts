@@ -118,7 +118,7 @@ export class AuthService {
       takeUntil(this.destroyOnMe$),
       catchError((error: any) => this.handleError(error)),
       finalize(() => {
-        this.isGetMe = false;
+        // this.isGetMe = false;
       })
     );
   }
@@ -132,7 +132,6 @@ export class AuthService {
         this.isMaintenance = true;
         break;
       case 429:
-
         break;
       case 403:
         this.router.navigate(['/403']);
