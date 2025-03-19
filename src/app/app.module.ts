@@ -14,6 +14,9 @@ import { HttpInterceptorService } from './services/http-logger.service';
 import { HTTP_INTERCEPTORS, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { DatePipe } from '@angular/common';
 import { DashboardComponent } from './page/dashboard/dashboard.component';
+import { PlansComponent } from './page/plans/plans.component';
+import { AboutComponent } from './page/about/about.component';
+import { FaqComponent } from './page/faq/faq.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { DashboardComponent } from './page/dashboard/dashboard.component';
     HomeComponent,
     SignUpComponent,
     SignInComponent,
-    DashboardComponent
+    DashboardComponent,
+    PlansComponent,
+    AboutComponent,
+    FaqComponent
   ],
   imports: [
     BrowserModule,

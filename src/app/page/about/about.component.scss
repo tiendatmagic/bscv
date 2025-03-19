@@ -26,31 +26,3 @@
   z-index: -1;
   opacity: 0.6;
 }
-
-.animation {
-  position: relative;
-  animation: marquee 5s linear infinite;
-}
-
-@keyframes marquee {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-20vw);
-  }
-}
-@keyframes marqueee {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-150vw);
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .animation {
-    animation: marqueee 5s linear infinite;
-  }
-}
