@@ -1,0 +1,12 @@
+.section-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #7c3aed 0, #d093e8);
+  border-radius: 4px;
+  z-index: -1;
+  opacity: 0.6;
+}
