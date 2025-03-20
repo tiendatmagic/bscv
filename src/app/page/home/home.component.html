@@ -767,17 +767,17 @@
 
     <div class="flex items-center justify-center mt-5">
       <ul class="flex flex-wrap justify-center p-3 text-center rounded-md md:w-fit bg-[#000] shadow-gray-800" id="myTab"
-        data-tabs-toggle="#StarterContent" role="tablist">
+        role="tablist">
         <li role="presentation" class="block md:inline-block md:w-fit me-1">
           <button class="w-full px-6 py-2 font-semibold transition-all duration-500 ease-in-out rounded-md"
-            id="wednesday-tab" data-tabs-target="#wednesday" type="button" role="tab"
+            type="button" role="tab"
             [ngClass]="chooseTransaction===0?'bg-violet-600 text-white':'bg-slate-900 hover:bg-slate-800 hover:text-white'"
             (click)="chooseTransaction=0">Top
             Deposits</button>
         </li>
         <li role="presentation" class="block md:inline-block md:w-fit">
           <button class="w-full px-6 py-2 font-semibold transition-all duration-500 ease-in-out rounded-md"
-            id="thursday-tab" data-tabs-target="#thursday" type="button" role="tab"
+            type="button" role="tab"
             [ngClass]="chooseTransaction===1?'bg-violet-600 text-white':'bg-slate-900 hover:bg-slate-800 hover:text-white'"
             (click)="chooseTransaction=1">Top
             Withdraws</button>
