@@ -786,7 +786,7 @@
     </div>
 
     <div class="mt-5">
-      <div class="flex overflow-hidden max-w-[1024px]" *ngIf="chooseTransaction===0">
+      <div class="flex overflow-hidden max-w-[1024px]" [ngClass]="chooseTransaction===0 ? 'block' : 'hidden'">
         <div id="default-carousel" class="relative w-full" data-carousel="slide">
           <!-- Carousel wrapper -->
           <div class="relative w-full h-40 overflow-hidden rounded-lg">
@@ -1009,82 +1009,222 @@
         </div>
 
       </div>
-      <div class="flex overflow-hidden max-w-[1024px]" *ngIf="chooseTransaction===1">
-        <div class="flex animation">
-          <div class="min-w-[200px] mx-auto text-center whitespace-nowrap">
-            <div class="w-12 h-12 mx-auto text-center">
-              <img src="https://cdn-icons-png.flaticon.com/256/15301/15301795.png" alt="" class="w-full h-full">
+      <div class="flex overflow-hidden max-w-[1024px]" [ngClass]="chooseTransaction===1 ? 'block' : 'hidden'">
+        <div id="default-carousel" class="relative w-full" data-carousel="slide">
+          <!-- Carousel wrapper -->
+          <div class="relative w-full h-40 overflow-hidden rounded-lg">
+            <!-- Item 1 -->
+            <div class="duration-700 ease-in-out" data-carousel-item>
+              <div class="flex w-full h-full">
+                <div class="min-w-[200px] mx-auto text-center whitespace-nowrap">
+                  <div class="w-12 h-12 mx-auto text-center">
+                    <img src="https://cdn-icons-png.flaticon.com/256/15301/15301795.png" alt="" class="w-full h-full">
+                  </div>
+                  <div>
+                    <p class="line-clamp-3">ao***75&#64;ukr.net
+                    </p>
+                    <span class="line-clamp-3"> <span class="text-violet-500">89.86</span>USDT-ERC20</span>
+                  </div>
+                </div>
+                <div class="min-w-[200px] mx-auto text-center whitespace-nowrap">
+                  <div class="w-12 h-12 mx-auto text-center">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/1024px-Bitcoin.svg.png"
+                      alt="" class="w-full h-full">
+                  </div>
+                  <div>
+                    <p class="line-clamp-3">io***28&#64;gmail.com
+                    </p>
+                    <span class="line-clamp-3"> <span class="text-violet-500">3.12</span>BTC</span>
+                  </div>
+                </div>
+                <div class="min-w-[200px] mx-auto text-center whitespace-nowrap">
+                  <div class="w-12 h-12 mx-auto text-center">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/1024px-Bitcoin.svg.png"
+                      alt="" class="w-full h-full">
+                  </div>
+                  <div>
+                    <p class="line-clamp-3">e4***pi&#64;i.ua
+                    </p>
+                    <span class="line-clamp-3"> <span class="text-violet-500">4.145</span>BTC</span>
+                  </div>
+                </div>
+                <div class="min-w-[200px] mx-auto text-center whitespace-nowrap">
+                  <div class="w-12 h-12 mx-auto text-center">
+                    <img src="https://cdn-icons-png.flaticon.com/256/15301/15301795.png" alt="" class="w-full h-full">
+                  </div>
+                  <div>
+                    <p class="line-clamp-3">ui***qn&#64;i.ua
+                    </p>
+                    <span class="line-clamp-3"> <span class="text-violet-500">40.35</span>USDT-TRC20</span>
+                  </div>
+                </div>
+                <div class="min-w-[200px] mx-auto text-center whitespace-nowrap">
+                  <div class="w-12 h-12 mx-auto text-center">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/1024px-Bitcoin.svg.png"
+                      alt="" class="w-full h-full">
+                  </div>
+                  <div>
+                    <p class="line-clamp-3">iy***pi&#64;i.ua
+                    </p>
+                    <span class="line-clamp-3"> <span class="text-violet-500">3.1</span>BTC</span>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div>
-              <p class="line-clamp-3">ao***75&#64;ukr.net
-              </p>
-              <span class="line-clamp-3"> <span class="text-violet-500">89.86</span>USDT-ERC20</span>
+            <!-- Item 2 -->
+            <div class="duration-700 ease-in-out" data-carousel-item>
+              <div class="flex w-full h-full">
+                <div class="min-w-[200px] mx-auto text-center whitespace-nowrap">
+                  <div class="w-12 h-12 mx-auto text-center">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/1024px-Bitcoin.svg.png"
+                      alt="" class="w-full h-full">
+                  </div>
+                  <div>
+                    <p class="line-clamp-3">e4***pi&#64;i.ua
+                    </p>
+                    <span class="line-clamp-3"> <span class="text-violet-500">4.145</span>BTC</span>
+                  </div>
+                </div>
+                <div class="min-w-[200px] mx-auto text-center whitespace-nowrap">
+                  <div class="w-12 h-12 mx-auto text-center">
+                    <img src="https://cdn-icons-png.flaticon.com/256/15301/15301795.png" alt="" class="w-full h-full">
+                  </div>
+                  <div>
+                    <p class="line-clamp-3">ui***qn&#64;i.ua
+                    </p>
+                    <span class="line-clamp-3"> <span class="text-violet-500">40.35</span>USDT-TRC20</span>
+                  </div>
+                </div>
+                <div class="min-w-[200px] mx-auto text-center whitespace-nowrap">
+                  <div class="w-12 h-12 mx-auto text-center">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/1024px-Bitcoin.svg.png"
+                      alt="" class="w-full h-full">
+                  </div>
+                  <div>
+                    <p class="line-clamp-3">qk***wn&#64;i.ua
+                    </p>
+                    <span class="line-clamp-3"> <span class="text-violet-500">5.6</span>BTC</span>
+                  </div>
+                </div>
+                <div class="min-w-[200px] mx-auto text-center whitespace-nowrap">
+                  <div class="w-12 h-12 mx-auto text-center">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/1024px-Bitcoin.svg.png"
+                      alt="" class="w-full h-full">
+                  </div>
+                  <div>
+                    <p class="line-clamp-3">iy***pi&#64;i.ua
+                    </p>
+                    <span class="line-clamp-3"> <span class="text-violet-500">3.1</span>BTC</span>
+                  </div>
+                </div>
+                <div class="min-w-[200px] mx-auto text-center whitespace-nowrap">
+                  <div class="w-12 h-12 mx-auto text-center">
+                    <img src="https://cdn-icons-png.flaticon.com/256/15301/15301795.png" alt="" class="w-full h-full">
+                  </div>
+                  <div>
+                    <p class="line-clamp-3">po***qn&#64;i.ua
+                    </p>
+                    <span class="line-clamp-3"> <span class="text-violet-500">34.67</span>USDT-TRC20</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="duration-700 ease-in-out" data-carousel-item>
+              <div class="flex w-full h-full">
+                <div class="min-w-[200px] mx-auto text-center whitespace-nowrap">
+                  <div class="w-12 h-12 mx-auto text-center">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/1024px-Bitcoin.svg.png"
+                      alt="" class="w-full h-full">
+                  </div>
+                  <div>
+                    <p class="line-clamp-3">mr***28&#64;gmail.com
+                    </p>
+                    <span class="line-clamp-3"> <span class="text-violet-500">9.89</span>BTC</span>
+                  </div>
+                </div>
+
+                <div class="min-w-[200px] mx-auto text-center whitespace-nowrap">
+                  <div class="w-12 h-12 mx-auto text-center">
+                    <img src="https://cdn-icons-png.flaticon.com/256/15301/15301795.png" alt="" class="w-full h-full">
+                  </div>
+                  <div>
+                    <p class="line-clamp-3">yu***qn&#64;i.ua
+                    </p>
+                    <span class="line-clamp-3"> <span class="text-violet-500">66.96</span>USDT-TRC20</span>
+                  </div>
+                </div>
+                <div class="min-w-[200px] mx-auto text-center whitespace-nowrap">
+                  <div class="w-12 h-12 mx-auto text-center">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/1024px-Bitcoin.svg.png"
+                      alt="" class="w-full h-full">
+                  </div>
+                  <div>
+                    <p class="line-clamp-3">mu***wn&#64;i.ua
+                    </p>
+                    <span class="line-clamp-3"> <span class="text-violet-500">7.8</span>BTC</span>
+                  </div>
+                </div>
+                <div class="min-w-[200px] mx-auto text-center whitespace-nowrap">
+                  <div class="w-12 h-12 mx-auto text-center">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/1024px-Bitcoin.svg.png"
+                      alt="" class="w-full h-full">
+                  </div>
+                  <div>
+                    <p class="line-clamp-3">ai***pi&#64;i.ua
+                    </p>
+                    <span class="line-clamp-3"> <span class="text-violet-500">7.7</span>BTC</span>
+                  </div>
+                </div>
+                <div class="min-w-[200px] mx-auto text-center whitespace-nowrap">
+                  <div class="w-12 h-12 mx-auto text-center">
+                    <img src="https://cdn-icons-png.flaticon.com/256/15301/15301795.png" alt="" class="w-full h-full">
+                  </div>
+                  <div>
+                    <p class="line-clamp-3">qj***75&#64;ukr.net
+                    </p>
+                    <span class="line-clamp-3"> <span class="text-violet-500">45.28</span>USDT-ERC20</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="min-w-[200px] mx-auto text-center whitespace-nowrap">
-            <div class="w-12 h-12 mx-auto text-center">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/1024px-Bitcoin.svg.png"
-                alt="" class="w-full h-full">
-            </div>
-            <div>
-              <p class="line-clamp-3">io***28&#64;gmail.com
-              </p>
-              <span class="line-clamp-3"> <span class="text-violet-500">3.12</span>BTC</span>
-            </div>
-          </div>
-          <div class="min-w-[200px] mx-auto text-center whitespace-nowrap">
-            <div class="w-12 h-12 mx-auto text-center">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/1024px-Bitcoin.svg.png"
-                alt="" class="w-full h-full">
-            </div>
-            <div>
-              <p class="line-clamp-3">e4***pi&#64;i.ua
-              </p>
-              <span class="line-clamp-3"> <span class="text-violet-500">4.145</span>BTC</span>
-            </div>
-          </div>
-          <div class="min-w-[200px] mx-auto text-center whitespace-nowrap">
-            <div class="w-12 h-12 mx-auto text-center">
-              <img src="https://cdn-icons-png.flaticon.com/256/15301/15301795.png" alt="" class="w-full h-full">
-            </div>
-            <div>
-              <p class="line-clamp-3">ui***qn&#64;i.ua
-              </p>
-              <span class="line-clamp-3"> <span class="text-violet-500">40.35</span>USDT-TRC20</span>
-            </div>
-          </div>
-          <div class="min-w-[200px] mx-auto text-center whitespace-nowrap">
-            <div class="w-12 h-12 mx-auto text-center">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/1024px-Bitcoin.svg.png"
-                alt="" class="w-full h-full">
-            </div>
-            <div>
-              <p class="line-clamp-3">iy***pi&#64;i.ua
-              </p>
-              <span class="line-clamp-3"> <span class="text-violet-500">3.1</span>BTC</span>
-            </div>
-          </div>
-          <div class="min-w-[200px] mx-auto text-center whitespace-nowrap">
-            <div class="w-12 h-12 mx-auto text-center">
-              <img src="https://cdn-icons-png.flaticon.com/256/15301/15301795.png" alt="" class="w-full h-full">
-            </div>
-            <div>
-              <p class="line-clamp-3">po***qn&#64;i.ua
-              </p>
-              <span class="line-clamp-3"> <span class="text-violet-500">34.67</span>USDT-TRC20</span>
-            </div>
-          </div>
-          <div class="min-w-[200px] mx-auto text-center whitespace-nowrap">
-            <div class="w-12 h-12 mx-auto text-center">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/1024px-Bitcoin.svg.png"
-                alt="" class="w-full h-full">
-            </div>
-            <div>
-              <p class="line-clamp-3">qk***wn&#64;i.ua
-              </p>
-              <span class="line-clamp-3"> <span class="text-violet-500">5.6</span>BTC</span>
-            </div>
-          </div>
+          <!-- Slider controls -->
+          <button type="button"
+            class="absolute top-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer start-0 group focus:outline-none"
+            data-carousel-prev>
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60">
+              <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M5 1 1 5l4 4" />
+              </svg>
+              <span class="sr-only">Previous</span>
+            </span>
+          </button>
+          <button type="button"
+            class="absolute top-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer end-0 group focus:outline-none"
+            data-carousel-next>
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60">
+              <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 9 4-4-4-4" />
+              </svg>
+              <span class="sr-only">Next</span>
+            </span>
+          </button>
         </div>
       </div>
     </div>
