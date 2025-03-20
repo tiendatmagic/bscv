@@ -14,9 +14,7 @@ export class HomeComponent {
   chooseTransaction: number = 0;
 
   ngAfterViewInit(): void {
-    setTimeout(() => {
-      initFlowbite();
-    }, 0);
+    initFlowbite();
   }
 
 }
