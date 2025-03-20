@@ -42,55 +42,15 @@
 
 .animation {
   position: relative;
-  -webkit-animation: marquee 5s linear infinite;
+  will-change: transform;
   animation: marquee 5s linear infinite;
-}
-
-@-webkit-keyframes marquee {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(-20vw);
-    transform: translateX(-20vw);
-  }
 }
 
 @keyframes marquee {
   0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
   }
   100% {
-    -webkit-transform: translateX(-20vw);
-    transform: translateX(-20vw);
-  }
-}
-@-webkit-keyframes marqueee {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(-150vw);
-    transform: translateX(-150vw);
-  }
-}
-@keyframes marqueee {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(-150vw);
-    transform: translateX(-150vw);
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .animation {
-    -webkit-animation: marqueee 5s linear infinite;
-    animation: marqueee 5s linear infinite;
+    transform: translate3d(-90%, 0, 0);
   }
 }
