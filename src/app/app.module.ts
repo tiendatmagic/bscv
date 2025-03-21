@@ -17,6 +17,9 @@ import { DashboardComponent } from './page/dashboard/dashboard.component';
 import { PlansComponent } from './page/plans/plans.component';
 import { AboutComponent } from './page/about/about.component';
 import { FaqComponent } from './page/faq/faq.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { NotifymodalComponent } from './modal/notifymodal/notifymodal.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -30,12 +33,14 @@ import { FaqComponent } from './page/faq/faq.component';
     DashboardComponent,
     PlansComponent,
     AboutComponent,
-    FaqComponent
+    FaqComponent,
+    NotifymodalComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    MatDialogModule,
     FormsModule
   ],
   providers: [{
@@ -44,7 +49,8 @@ import { FaqComponent } from './page/faq/faq.component';
     multi: true
   },
     DatePipe,
-  provideHttpClient(withInterceptorsFromDi())],
+  provideHttpClient(withInterceptorsFromDi()),
+  provideAnimationsAsync()],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
