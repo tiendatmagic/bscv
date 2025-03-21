@@ -63,6 +63,11 @@ class AuthController extends BaseController
 
             $newRefreshToken = $this->createRefreshToken();
             return $this->respondWithToken($token, $newRefreshToken, null, request());
+        } else {
+            return response()->json([
+                'status' => 'error',
+                'message' => 'Unauthorized',
+            ], 401);
         }
     }
 

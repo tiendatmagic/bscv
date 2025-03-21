@@ -49,6 +49,9 @@ export class SignInComponent {
         (error: any) => {
           this.auth.isLogin = false;
           this.loginForm.enable();
+          if (error.error.message == 'Unauthorized') {
+            this.dataService.showNotify('error', 'Lỗi đăng nhập', 'Đăng nhập thất bại, hãy kiểm tra lại thông tin');
+          }
         }
       );
     }
